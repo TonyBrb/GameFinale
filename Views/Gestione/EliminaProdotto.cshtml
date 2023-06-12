@@ -1,0 +1,59 @@
+﻿@model Prodotto
+@{
+    ViewData["Title"] = "EliminaProdotto";
+}
+
+<h1>EliminaProdotto</h1>
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                ID prodotto
+            </div>
+            <div class="col">
+                <input type="text" name="IdProdotto" value="@Model.IdProdotto" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Nome:
+            </div>
+            <div class="col">
+                <input type="text" name="Nome" value="@Model.Nome" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Prezzo:
+            </div>
+            <div class="col">
+                <input type="text" name="Prezzo" value="@Model.Prezzo" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Quantità:
+            </div>
+            <div class="col">
+                <input type="text" name="Quantita" value="@Model.Quantita" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <input type="submit" value="Delete" class="btn btn-danger" />
+            </div>
+        </div>
+    </div>
+</form>

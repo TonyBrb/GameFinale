@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "NuovoUtente";
+}
+
+<h1>Aggiungi un Nuovo Utente</h1>
+
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                ID utente
+            </div>
+            <div class="col">
+                <input type="text" name="IdUtente" value="@ViewBag.NuovoId" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Nome Utente:
+            </div>
+            <div class="col">
+                <input type="text" name="NomeUtente" value="" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Id Carrello:
+            </div>
+            <div class="col">
+                <input type="text" name="IdCarrello" value="@ViewBag.NuovoId" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <input type="submit" value="Salva" />
+            </div>
+        </div>
+    </div>
+</form>

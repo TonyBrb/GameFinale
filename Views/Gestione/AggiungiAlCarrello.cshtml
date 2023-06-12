@@ -1,0 +1,60 @@
+﻿@model Carrello
+@{
+    ViewData["Title"] = "AggiungiAlCarrello";
+}
+
+<h1>AggiungiAlCarrello</h1>
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Id Carrello
+            </div>
+            <div class="col">
+                <input type="text" name="id_carrello" value="@Model.IdCarrello" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Id Prodotto:
+            </div>
+            <div class="col">
+                <input type="text" name="id_prodotto" value="@Model.IdProdotto" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Quantità Totale:
+            </div>
+            <div class="col">
+                <input type="text" name="quantita" value="@Model.QuantitaTotale" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Prezzo:
+            </div>
+            <div class="col">
+                <input type="text" name="prezzo" value="@Model.Prezzo" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <input type="submit" value="Aggiungi al Carrello" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Utente>
+@{
+    ViewData["Title"] = "ListaUtenti";
+}
+
+<h1>Lista Utenti</h1>
+
+<a asp-action="NuovoUtente">Aggiungi un nuovo Utente</a>
+<table class="table table-bordered">
+    <tr>
+        <th>Id utente</th>
+        <th>Nome utente</th>
+        <th>Id Carrello</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.IdUtente</td>
+            <td>@item.NomeUtente</td>
+            <td>@item.IdCarrello</td>
+            <td><a asp-action="EliminaUtente" asp-route-id="@item.IdUtente">Delete</a></td>
+        </tr>
+    }
+</table>
+
